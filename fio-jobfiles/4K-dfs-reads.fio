@@ -13,8 +13,8 @@ disable_clat=1
 
 bs=4K
 size=2G
-iodepth=30
-numjobs=50
+iodepth=150
+numjobs=30
 
 [daos-seqwrite]
 rw=write
