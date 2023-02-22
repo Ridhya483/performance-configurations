@@ -12,7 +12,7 @@ disable_slat=1
 disable_clat=1
 
 bs=4M
-size=240G
+size=80G
 iodepth=10
 numjobs=50
 
