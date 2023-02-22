@@ -12,7 +12,7 @@ http_s3_region=us-east-1
 group_reporting
 iodepth=1
 bs=1M
-size=1G
+size=5G
 numjobs=50
 
 
