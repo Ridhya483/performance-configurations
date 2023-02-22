@@ -12,9 +12,9 @@ disable_slat=1
 disable_clat=1
 
 bs=1M
-size=30G
-iodepth=150
-numjobs=50
+size=10G
+iodepth=30
+numjobs=75
 
 [daos-seqwrite]
 rw=write
