@@ -1,0 +1,182 @@
+{
+  "Version": "3.4.0+dev", 
+  "Began": "Mon Feb  6 23:54:11 2023", 
+  "Command line": "ior -a DFS -b 128M -t 128M -v -W -w -r -R -s 12 -i 1 --dfs.pool=tank --dfs.cont=cont1 -o /testfile1 -F -c -C -O summaryFile=/tmp/outputs/testout_DFS_Node-3_Clnt-255_T-128M_B-128M.json -O summaryFormat=JSON", 
+  "Machine": "Linux daos2", 
+  "tests": [
+    {
+    "TestID": 0, 
+    "StartTime": "Mon Feb  6 23:54:13 2023"    , "Path": "/testfile1.00000000","Capacity": "27.3 TiB", "Used Capacity": "4.4%","Inodes": "-0.0 Mi", "Used Inodes" : "0.0%"
+, 
+    "Parameters": {
+      "testID": 0, 
+      "refnum": 0, 
+      "api": "DFS", 
+      "platform": "daos(Linux)", 
+      "testFileName": "/testfile1", 
+      "deadlineForStonewall": 0, 
+      "stoneWallingWearOut": 0, 
+      "maxTimeDuration": 0, 
+      "outlierThreshold": 0, 
+      "options": "(null)", 
+      "dryRun": 0, 
+      "nodes": 3, 
+      "memoryPerTask": 0, 
+      "memoryPerNode": 0, 
+      "tasksPerNode": 85, 
+      "repetitions": 1, 
+      "multiFile": 0, 
+      "interTestDelay": 0, 
+      "fsync": 0, 
+      "fsyncperwrite": 0, 
+      "useExistingTestFile": 0, 
+      "uniqueDir": 0, 
+      "singleXferAttempt": 0, 
+      "readFile": 1, 
+      "writeFile": 1, 
+      "filePerProc": 1, 
+      "reorderTasks": 1, 
+      "reorderTasksRandom": 0, 
+      "reorderTasksRandomSeed": 0, 
+      "randomOffset": 0, 
+      "checkWrite": 1, 
+      "checkRead": 1, 
+      "dataPacketType": 0, 
+      "keepFile": 0, 
+      "keepFileWithError": 0, 
+      "warningAsErrors": 0, 
+      "verbose": 1, 
+      "data packet type": "g", 
+      "setTimeStampSignature/incompressibleSeed": 0, 
+      "collective": 1, 
+      "segmentCount": 12, 
+      "transferSize": 134217728, 
+      "blockSize": 134217728
+    }
+, 
+    "Options": {
+      "api": "DFS", 
+      "apiVersion": "DAOS", 
+      "test filename": "/testfile1", 
+      "access": "file-per-process", 
+      "type": "collective", 
+      "segments": 12, 
+      "ordering in a file": "sequential", 
+      "ordering inter file": "constant task offset", 
+      "task offset": 1, 
+      "nodes": 3, 
+      "tasks": 255, 
+      "clients per node": 85, 
+      "memoryBuffer": "CPU", 
+      "dataAccess": "CPU", 
+      "GPUDirect": "0", 
+      "repetitions": 1, 
+      "xfersize": "128 MiB", 
+      "blocksize": "128 MiB", 
+      "aggregate filesize": "382.50 GiB", 
+      "verbose": 1
+    }
+, 
+    "Results": [
+            {
+        "access": "write", 
+        "bwMiB": 25960.3757, 
+        "blockKiB": 131072.0000, 
+        "xferKiB": 131072.0000, 
+        "iops": 203.3010, 
+        "latency": 15.0312, 
+        "openTime": 10.0740, 
+        "wrRdTime": 15.0516, 
+        "closeTime": 0.0205, 
+        "totalTime": 15.0876
+      }
+, 
+            {
+        "access": "read", 
+        "bwMiB": 34627.0195, 
+        "blockKiB": 131072.0000, 
+        "xferKiB": 131072.0000, 
+        "iops": 271.2884, 
+        "latency": 11.2351, 
+        "openTime": 0.0774, 
+        "wrRdTime": 11.2795, 
+        "closeTime": 0.0320, 
+        "totalTime": 11.3114
+      }
+, 
+            {
+        "access": "remove", 
+        "totalTime": 0.9994
+      }
+]
+, 
+  "max": {
+    "writeMiB": 25960.3757, 
+    "writeMB": 27221.4270, 
+    "readMiB": 34627.0195, 
+    "readMB": 36309.0616
+  }
+
+}
+]
+, 
+"summary": [
+{
+  "operation": "write", 
+  "API": "DFS", 
+  "TestID": 0, 
+  "ReferenceNumber": 0, 
+  "segmentCount": 12, 
+  "blockSize": 134217728, 
+  "transferSize": 134217728, 
+  "numTasks": 255, 
+  "tasksPerNode": 85, 
+  "repetitions": 1, 
+  "filePerProc": 1, 
+  "reorderTasks": 1, 
+  "taskPerNodeOffset": 1, 
+  "reorderTasksRandom": 0, 
+  "reorderTasksRandomSeed": 0, 
+  "bwMaxMIB": 25960.3757, 
+  "bwMinMIB": 25960.3757, 
+  "bwMeanMIB": 25960.3757, 
+  "bwStdMIB": 0.0000, 
+  "OPsMax": 202.8154, 
+  "OPsMin": 202.8154, 
+  "OPsMean": 202.8154, 
+  "OPsSD": 0.0000, 
+  "MeanTime": 15.0876, 
+  "xsizeMiB": 391680.0000
+}
+, 
+{
+  "operation": "read", 
+  "API": "DFS", 
+  "TestID": 0, 
+  "ReferenceNumber": 0, 
+  "segmentCount": 12, 
+  "blockSize": 134217728, 
+  "transferSize": 134217728, 
+  "numTasks": 255, 
+  "tasksPerNode": 85, 
+  "repetitions": 1, 
+  "filePerProc": 1, 
+  "reorderTasks": 1, 
+  "taskPerNodeOffset": 1, 
+  "reorderTasksRandom": 0, 
+  "reorderTasksRandomSeed": 0, 
+  "bwMaxMIB": 34627.0195, 
+  "bwMinMIB": 34627.0195, 
+  "bwMeanMIB": 34627.0195, 
+  "bwStdMIB": 0.0000, 
+  "OPsMax": 270.5236, 
+  "OPsMin": 270.5236, 
+  "OPsMean": 270.5236, 
+  "OPsSD": 0.0000, 
+  "MeanTime": 11.3114, 
+  "xsizeMiB": 391680.0000
+}
+]
+, 
+"Finished": "Mon Feb  6 23:54:55 2023"
+}
