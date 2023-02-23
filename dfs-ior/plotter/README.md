@@ -14,6 +14,6 @@ This directory contains a Jupyter Notebook '**run_daos Graph Plotter.ipynb**' th
 * 2 **.PNG** files - 1 each for Read and Write
 	* These contain 1 graph/subplot per **xfersize** found in the .csv; in each subplot, **performance** is plotted against **number of clients/node**
 	* Example files:
-		* ![Read performance - 3 Nodes - 3 APIs](https://github.com/d-nayak/run_daos/blob/main/plotter/Read_DFS-3N_POSIX-3N_MPIIO-3N.png)
-		* ![Write performance - 3 Nodes - 3 APIs](https://github.com/d-nayak/run_daos/blob/main/plotter/Write_DFS-3N_POSIX-3N_MPIIO-3N.png)
+		* ![Read performance - 3 Nodes - 3 APIs](./Read_DFS-3N_POSIX-3N_MPIIO-3N.png)
+		* ![Write performance - 3 Nodes - 3 APIs](./Write_DFS-3N_POSIX-3N_MPIIO-3N.png)
 		
